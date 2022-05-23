@@ -1,0 +1,20 @@
+The most popular hipervizor is:VMware
+					Microsoft Hyper-v
+					VitualBox
+					XenServer
+					RedHat
+VMware - The leader in the Tier-1 hypervisors is VMware with their vSphere/ESXi product – available in a free 
+edition and 5 commercial editions. VMware led the market in developing innovative features such as
+ memory overcommitment, vMotion, Storage vMotion, Fault Tolerance, and more.
+
+Hyper-V - Along with XenServer and vSphere (next on the list), Hyper-V is one of the top 3 Tier-1 
+hypervisors (frequently flip/flopping between 2nd and 3rd place with XenServer). 
+First released with Windows Server, Hyper-V has now been greatly enhanced with Windows Server 2012 Hyper-V.
+
+Xen - Xen is a type-1 bare-metal hypervisor. Just as Red Hat Enterprise Virtualization uses KVM, Citrix uses 
+Xen in the commercial XenServer. In 2007 Citrix bought XenSource, Inc, who supported Xen. Today, the Xen open 
+source projects and community are at Xen.org. 
+
+RedHat - Red Hat Enterprise Virtualization (RHEV) is a commercial implementation of the KVM Type-1 hypervisor. 
+Red Hat Enterprise Virtualization uses SPICE protocol and VDSM (Virtual Desktop Server Manager) with a 
+RHEL-based centralized management server.
