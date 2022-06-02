@@ -1,0 +1,2 @@
+In columns we see permissions, date, time,  bytes, owners, name, uid, gid
+

@@ -1,0 +1,7 @@
+Setuid, setgid, and the sticky bit can be tough for new and aspiring Linux admins to understand. It's easy enough to do a web search for the basic definitions:
+
+    setuid: a bit that makes an executable run with the privileges of the owner of the file
+    setgid: a bit that makes an executable run with the privileges of the group of the file
+    sticky bit: a bit set on directories that allows only the owner or root can delete files and subdirectories
+
+

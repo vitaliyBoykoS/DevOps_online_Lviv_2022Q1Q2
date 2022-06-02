@@ -1,0 +1,7 @@
+Systemd defines a number of special UID range:
+    60001-60513: UIDs for home directories managed by systemd-homed
+    61184-65519 (0xef00-0xffef): UIDs for dynamic users
+
+UID - user identifier or user ID. Its number for identify user or groups(GID)
+
+The POSIX standard introduced three different UID fields into the process descriptor table, to allow privileged processes to take on different roles dynamically: Effective user ID,Saved user ID,Real user ID

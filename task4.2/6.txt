@@ -1,0 +1,16 @@
+First get user identity using the id command:
+id tom
+
+Next use the grep command to grab login info about user named tom from the /etc/passwd file
+grep '^tom:' /etc/passwd
+
+See group info about user named tom using the groups command:
+grep 'tom' /etc/group
+groups tom
+
+Find home directory permissions for user named tom, run the following ls command:
+ls -ld /home/tom/
+
+Finally, see all Linux process owned by user and group named tom using the ps command:
+ps aux | grep tom
+ps -u tom

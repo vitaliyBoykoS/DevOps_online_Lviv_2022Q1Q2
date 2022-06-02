@@ -1,0 +1,8 @@
+Tou can use same diferend command
+ For lock
+Use the command “passwd -l username”.
+Use the command “usermod -l username”.
+
+Unlock
+Use the command “passwd -u username”.
+Use the command “usermod -U username”.

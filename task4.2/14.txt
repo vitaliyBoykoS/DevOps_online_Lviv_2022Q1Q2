@@ -1,0 +1,2 @@
+ If you want change permissions use chmode
+For change owner use chown

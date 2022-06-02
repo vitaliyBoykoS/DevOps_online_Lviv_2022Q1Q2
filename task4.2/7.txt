@@ -1,0 +1,6 @@
+The /etc/skel directory contains files and directories that are automatically copied over to a new user’s home directory when such a user is created by the useradd program. skel is derived from the “skeleton”.
+Structure:
+permisions 
+owners
+date
+time

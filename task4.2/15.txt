@@ -1,0 +1,3 @@
+There are three digits in a chmod permission. The first digit represents the permissions of the user, the second represents the group, and the third represents global permissions. So if a file has permissions 754, the user can read, write, and execute; the group can read and execute, while all other users can only read.
+
+Umask, or the user file-creation mode, is a Linux command that is used to assign the default file permission sets for newly created folders and files. The term mask references the grouping of the permission bits, each of which defines how its corresponding permission is set for newly created files. The bits in the mask may be changed by invoking the umask command.

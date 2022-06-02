@@ -1,0 +1,1 @@
+In linux has a three  access rights exist read, writes and execute. And tree groups its owner, group and all. And we can take permission for owner, group and all separate.

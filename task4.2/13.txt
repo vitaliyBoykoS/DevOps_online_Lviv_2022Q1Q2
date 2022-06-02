@@ -1,0 +1,9 @@
+It means:
+
+    user linuxsir is owner and can read and write on test.txt
+    group root can only read
+    Anyone else can only read
+
+It doesn't say that group rootis owner of the file, it is only saying which permissions group roothas over the file.
+
+By default, the owner of a file is the user who created it and the group assigned to a file is the primary group of the user. However, you can change the group of a file using chgrp.

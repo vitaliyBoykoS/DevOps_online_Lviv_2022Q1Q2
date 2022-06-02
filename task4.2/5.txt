@@ -1,0 +1,4 @@
+For add user using command useradd [] Username.
+When you create you must get username, password, permissions
+
+

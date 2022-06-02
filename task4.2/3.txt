@@ -1,0 +1,8 @@
+GID its like UID but for groups.
+Open terminal
+Type the command su to become the root user
+Type the command id -u to find the UID for a particular user.
+Type the command id -g to find the primary GID for a particular user
+Type the command id -G to list all the GIDs for a particular user
+Type the command exit to close the root user session.
+

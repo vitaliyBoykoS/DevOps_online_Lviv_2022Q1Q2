@@ -1,0 +1,13 @@
+Enter the following command in order to see which group the current user belongs to:
+
+1.groups
+
+This command lists all the groups that you belong to.
+
+Enter the following command to check which group a certain user belongs to:
+
+2.groups username
+
+You can also use the following command to list the group members along with their GIDs.
+
+3.id username

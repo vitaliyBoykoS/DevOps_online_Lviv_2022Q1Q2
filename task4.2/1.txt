@@ -1,0 +1,15 @@
+/etc/passwd file stores essential information required during login
+It have userId, groupId, home directory, shell and etc.
+
+From the above image:
+    Username
+    Password
+    User ID (UID)
+    Group ID (GID)
+    Home directory
+    Command/shell
+
+
+ /etc/group is a text file which defines the groups to which users belong under Linux and UNIX operating system. It have three clases grop, user,others
+File has group_name, password, Gid, group list. 
+User can check already groups using command groups.

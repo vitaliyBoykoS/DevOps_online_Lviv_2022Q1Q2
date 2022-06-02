@@ -1,0 +1,6 @@
+Use the following command to run the script:
+bash main.sh
+
+The built-in bash source command reads and executes the content of a file. If the sourced file is a bash script, the overall effect comes down to running it. We may use this command either in a terminal or inside a bash script.
+
+To obtain documentation concerning this command, we should type help source in the terminal. We assume that Bash (Bourne again shell) is not in POSIX mode is through the whole tutorial.
