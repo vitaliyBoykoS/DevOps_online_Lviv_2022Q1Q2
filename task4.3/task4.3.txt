@@ -1,0 +1,42 @@
+D = UNINTERRUPTABLE_SLEEP
+R = RUNNING & RUNNABLE
+S = INTERRRUPTABLE_SLEEP
+T = STOPPED
+Z = ZOMBIE
+
+Proc file system (procfs) is virtual file system created on fly when system boots and is dissolved at time of system shut down.
+
+It contains useful information about the processes that are currently running, it is regarded as control and information center for kernel.
+
+User-space processes have its own virtual address space.
+
+Kernel processes or threads do not have their own address space, they operate within kernel address space only. And they may be started before the kernel has started any user process (e.g. init).
+
+
+    Up: Process is up and running. Processes which are started successfully and reach a steady-state have a status of Up.
+    Done: The process is complete.
+    Kill: Process is being stopped. This is the normal state for a process to enter while being stopped. If a process is failing to shutdown, it remains in the Kill state for an extended amount of time.
+    Pend: Process execution is pending, waiting to be (re)started. Processes that have exited abnormally from the Up state shall fall into the Pend state. Processes that cannot start successfully shall remain in the Pend state.
+    Unknown: A failure is preventing the reporting or collection of the process status.
+
+top -U [username]
+
+Linux Top VmStat Lsof Netstat Htop 
+
+Top:
+ PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+
+A 	Alternate-Display-Mode toggle
+B 	Bold-Disable/Enable toggle
+d or s 	* Change-Delay-Time-interval
+g 	Choose-Another-Window/Field-Group
+
+You can change the process priority using nice and renice utility. Nice command will launch a process with an user defined scheduling priority. Renice command will modify the scheduling priority of a running process.
+
+Once given top command, press r. Give PID value of the process you want to change the process value. Give renice value (from -20 to +19)
+
+Nice value of -20 means highest priority value and +19 means lowest priority value. 0 is by default value.
+
+Don't confuse renice value (-20 to +19) with process value (0 to 39)
+
+kill -s USR1 3699   
