@@ -1,0 +1,36 @@
+#!/bin/bash
+
+echo
+
+if [[ -n "$1" ]]
+ then
+    while [ -n "$1" ]
+    do
+     case "$1" in
+        --all) echo $(ip addr show) ;;
+        --target) echo $(ss) ;;
+     esac
+    shift
+    done
+    exit
+fi
+    echo "--all - displays the IP addresses and symbolic names of all hosts in the current subnet"
+    echo "--target - displays a list of open system TCP ports"
+
+
+echo ""
+cut -d " " -f 1 example_log.log | sort | uniq -c | sort -nr | head -n 1 | awk '{print $2 " --> " $1}'
+echo ""
+#
+
+grep ' 404 ' example_log.log | cut -d ' ' -f 7 |sort |uniq -c |sort -n
+#echo $(awk {'print $8'} example_log.log | sort | uniq -c | head)
+
+echo ""
+
+#cut -d " " -f 1 example_log.log | sort | uniq -c | sort -nr | awk '{print $2 " --> " $1}'
+
+awk '{a[$7]+=$10}END{for(x in a)print x, a[x]}' example_log.log|sort -r -n -k2|head -n1
+
+echo ""
+cat example_log.log | cut -d[ -f2 | cut -d] -f1 | awk -F: '{print $2":00"}' | sort -n | uniq -c | head

@@ -1,0 +1,7 @@
+#!/bin/bash
+
+
+echo "Copying Files" >> $MYLOG
+cp -v $BACKUP_FROM/* /home/$USER/work/work_backup/ >> $MYLOG
+echo "Finished Copying Files" >> $MYLOG
+echo "Timestamp after work is done $(date +"%D %T")" >> $MYLOG
